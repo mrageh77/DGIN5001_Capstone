@@ -1,11 +1,8 @@
-# DGIN5001_Capstone
+# DGIN5001 - Capstone in Digital Innovation - 2021 Summer
 CAPSTONE PROJECT DESIGNED AND DEVELOPED IN PARTIAL FULFILMENT OF THE REQUIREMENT IN THE DGIN5001 COURSE
 
 <!--- The following README.md sample file was adapted from https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md by Gabriella Mosquera for academic use ---> 
 <!--- You may delete any comments in this sample README.md file. If needing to use as a .txt file then simply delete all comments, edit as needed, and save as a README.txt file --->
-
-# Master of Digital Innovation
-## DGIN5001 - Capstone in Digital Innovation - 2021 Summer
 ## Instructor: Dijana Kosmajac
 ## Capstone Project: Enhanced job market for in the IT industry.
 
