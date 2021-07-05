@@ -1,0 +1,88 @@
+CREATE TABLE mytable(
+   PostingID   INTEGER  NOT NULL PRIMARY KEY 
+  ,Title       VARCHAR(63) NOT NULL
+  ,Company     VARCHAR(47) NOT NULL
+  ,Location    VARCHAR(26)
+  ,Summary     VARCHAR(163) NOT NULL
+  ,Link        VARCHAR(1307) NOT NULL
+  ,Description VARCHAR(163) NOT NULL
+);
+
+CREATE TABLE Experience(
+   PostingID   INTEGER  NOT NULL PRIMARY KEY 
+  ,Skill       VARCHAR(1000) NOT NULL
+  ,Description     VARCHAR(1000) NOT NULL
+  ,StartDate    DATE
+  ,EndDate     DATE
+  ,PRIMARY KEY (ExperienceID),
+  ,FOREIGN KEY (ExperienceID) REFERENCES Resume(ExperienceID)
+);
+
+CREATE TABLE Resume(
+  ResumeID integer,
+  USERID integer,
+  SkillID integer,
+  ExperienceID integer,
+  EducationID integer,
+  Summary varchar(1000),
+  PRIMARY KEY (ResumeID)
+);
+
+CREATE TABLE  Jobsearch  (
+  SerachID integer,
+  USERID  integer,
+   PostingID  integer,
+   AdvertD  Interger,
+   Date  Date,
+  PRIMARY KEY ( SerachID ),
+  FOREIGN KEY ( USERID ) REFERENCES  UserProfile ( USERID ),
+  FOREIGN KEY ( AdvertD ) REFERENCES  Advert ( AdvertID ),
+  FOREIGN KEY ( PostingID ) REFERENCES  Jobposting ( PostingID )
+);
+
+CREATE TABLE  Jobposting  (
+   PostingID  integer,
+   Title  varchar(255),
+   Company  varchar(255),
+   Location  varchar(255),
+   Summary  varchar(1000),
+   Link  varchar(255),
+   Description  varchar(1000),
+  PRIMARY KEY ( PostingID )
+);
+
+CREATE TABLE  Skill  (
+   SKillID  integer,
+   Skill  varchar(255),
+   Description  varchar(1000),
+  PRIMARY KEY ( SKillID ),
+  FOREIGN KEY ( Description ) REFERENCES  Resume ( SkillID )
+);
+
+CREATE TABLE  UserProfile  (
+   USERID  integer,
+   UserName  varchar(255),
+   FirstName  varchar(255),
+   LastName  varchar(255),
+   password  PASSWORD,
+   Email  varchar(255),
+  PRIMARY KEY ( USERID )
+);
+
+CREATE TABLE  Advert  (
+   AdvertID  integer,
+   KeyWord  varchar(255),
+  PRIMARY KEY ( AdvertID )
+);
+
+CREATE TABLE  Education  (
+   EducationID  integer,
+   Title  varchar(255),
+   Description  varchar(1000),
+   University  varchar(255),
+   Country  varchar(255),
+   StartDate  Date,
+   EndDate  Date,
+  PRIMARY KEY ( EducationID )
+);
+
