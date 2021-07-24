@@ -56,6 +56,7 @@ In this project we wish to prototype a web based job search tool.
 
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Used for page styling and formating.
 * [HTML](https://html.com) - Building various page elements.
+* [Laravel Framework](https://laravel.com) - a PHP framework for creating front-ends & back-ends (including Database & Database migrations) 
 
 
 ## Acknowledgments
