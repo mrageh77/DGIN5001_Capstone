@@ -39,6 +39,8 @@ In this project we wish to prototype a web based job search tool.
 
 ## Deployment
 
+Deployed on a linux server @ [digital ocean](https://www.digitalocean.com)
+To view the app, plesae click [here](http://165.227.44.155)
 
 
 #### Authorization and authentication
