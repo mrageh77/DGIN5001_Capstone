@@ -42,13 +42,32 @@ In this project we wish to prototype a web based job search tool.
 Deployed on a linux server @ [digital ocean](https://www.digitalocean.com)
 To view the app, please click [here](http://165.227.44.155)
 
+To deploy the latest version of the database please run the migration scripts here => https://github.com/mrageh77/DGIN5001_Capstone/tree/main/app/database/migrations
+
 
 #### Authorization and authentication
 
-
+The app supports two models of authentication:
+1. Admin users (create jobs, users .. etc)
+2. Job seekers (search jobs, apply for jobs & save jobs)
 
 
 #### Navigation
+Sign up/Register
+
+<img width="496" alt="image" src="https://user-images.githubusercontent.com/85467680/126872658-f8cd4082-e637-45ff-8f28-83e81958bda0.png">
+
+Sign in/Login
+
+<img width="496" alt="image" src="https://user-images.githubusercontent.com/85467680/126872681-b27cb367-118f-45eb-b157-a96df9b1e969.png">
+
+Job Search/Apply & Save Jobs / Job Seeker Dashboard
+
+<img width="1606" alt="image" src="https://user-images.githubusercontent.com/85467680/126872701-675da9c1-2c9e-486e-bbe9-69c27ee2f20c.png">
+
+Update profile
+
+<img width="1606" alt="image" src="https://user-images.githubusercontent.com/85467680/126872717-256b8ae9-2398-4e05-9b97-77961fbcac3f.png">
 
 
 ## Built With
